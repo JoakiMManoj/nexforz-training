@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Coffee Shop</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background: #6f4e37; color: white; text-align: center; padding: 15px; }
+        nav { background: #4b2c20; text-align: center; padding: 10px; }
+        nav a { color: white; text-decoration: none; padding: 10px; display: inline-block; }
+        section { padding: 20px; text-align: center; }
+        form input, form textarea, form button { display: block; margin: 10px auto; padding: 10px; width: 80%; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Make a Reservation</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    <section>
+        <h2>Book Your Table</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="datetime-local" required>
+            <input type="number" placeholder="Number of Guests" required>
+            <textarea placeholder="Special Requests" rows="3"></textarea>
+            <button type="submit">Reserve Now</button>
+        </form>
+    </section>
+    <footer>
+        <p>Contact us: www.coffeeshop.com</p>
+    </footer>
+</body>
+</html>
