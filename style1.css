@@ -1,0 +1,95 @@
+*{Add commentMore actions
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to right,#83a444,#b6fbff);
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:#180fc1;
+}
+
+h1{
+    margin-bottom: 1rem;
+    color: #1d12ed;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.input-area{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:0.7rem;
+    margin-bottom: 2rem;
+}
+
+input[type="text"]
+{
+    padding: 0.7rem 1rem;
+    width:300px;
+    border:none;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow:0 0 5px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  background: #b92f44;
+  color: rgb(230, 234, 198);
+  border: none;
+  border-radius: 5px;
+  cursor:pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  background: #5c7c9e;
+}
+
+.weather-box {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.weather-box:hover {
+  transform: scale(1.02);
+}
+
+.weather-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.weather-box p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.weather-box p strong {
+  color: #222;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 450px;
+  width: 90%;
+  margin-top: 3rem;
+}
