@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book a Session – ZenWell</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .booking-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 1rem;
+      background-color: #f4f8f7;
+      gap: 2rem;
+    }
+
+    .booking-img {
+      flex: 1 1 400px;
+      min-height: 400px;
+      background: url('https://images.pexels.com/photos/317157/pexels-photo-317157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center/cover;
+      border-radius: 1rem;
+    }
+
+    .booking-form {
+      flex: 1 1 400px;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .booking-form h2 {
+      margin-bottom: 1.5rem;
+      color: #4caf50;
+      text-align: center;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form button {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.8rem 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .booking-form input:focus,
+    .booking-form select:focus {
+      border-color: #4caf50;
+      outline: none;
+    }
+
+    .booking-form button {
+      background-color: #4caf50;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .booking-form button:hover {
+      background-color: #388e3c;
+    }
+
+    @media (max-width: 768px) {
+      .booking-section {
+        flex-direction: column;
+      }
+
+      .booking-img {
+        width: 100%;
+        height: 300px;
+      }
+
+      .booking-form {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">Zen<span>Well</span></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="booking-section">
+    <div class="booking-img"></div>
+
+    <form action="/book" method="post" class="booking-form">
+      <h2>Book Your Session</h2>
+
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="datetime-local" name="datetime" required>
+
+      <select name="session" required>
+        <option value="">Choose a session type</option>
+        <option>Yoga</option>
+        <option>Ayurveda Therapy</option>
+        <option>Massage</option>
+      </select>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+</body>
+</html>

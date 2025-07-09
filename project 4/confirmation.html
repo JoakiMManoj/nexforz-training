@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking Confirmed – ZenWell</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f8f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .confirmation-box {
+      background: white;
+      padding: 2rem 3rem;
+      border-radius: 1rem;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .confirmation-box h1 {
+      color: #4caf50;
+      margin-bottom: 1rem;
+    }
+
+    .confirmation-box p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .confirmation-box a {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      background: #2196f3;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+    }
+
+    .confirmation-box a:hover {
+      background: #1976d2;
+    }
+  </style>
+</head>
+<body>
+  <div class="confirmation-box">
+    <h1>Thank You!</h1>
+    <p>Dear <strong>{{name}}</strong>, your <strong>{{session}}</strong> session is booked for:</p>
+    <p><strong>{{datetime}}</strong></p>
+    <a href="/">Back to Home</a>
+  </div>
+</body>
+</html>

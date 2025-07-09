@@ -1,0 +1,171 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+  }
+  
+  body {
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header .logo {
+    font-size: 1.8rem;
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  .header .logo span {
+    color: #2196f3;
+  }
+  
+  .header .nav a {
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .header .nav a:hover {
+    color: #4caf50;
+  }
+  
+  /* Booking Form */
+  form {
+    max-width: 500px;
+    margin: 4rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+  
+  form input,
+  form select,
+  form button {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  form input:focus,
+  form select:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  form button {
+    background: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #388e3c;
+  }
+  
+  /* Confirmation Box */
+  .box {
+    max-width: 500px;
+    margin: 5rem auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .box h1 {
+    color: #4caf50;
+    margin-bottom: 1rem;
+  }
+  
+  .box p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .box a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #2196f3;
+    font-weight: bold;
+  }
+  
+  /* Home / Hero */
+  .home {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: url('./image/yoga-bg.jpg') no-repeat center/cover;
+    color: white;
+  }
+  
+  .home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 5px #000;
+  }
+  
+  .home p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    text-shadow: 1px 1px 3px #000;
+  }
+  
+  .link-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #2196f3;
+    color: white;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .link-btn:hover {
+    background: #1976d2;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header .nav {
+      margin-top: 1rem;
+    }
+  
+    .home h1 {
+      font-size: 2rem;
+    }
+  
+    form {
+      margin: 2rem;
+    }
+  }
+  
